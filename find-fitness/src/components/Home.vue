@@ -1,12 +1,13 @@
 <template>
   <v-container>
-    <v-layout row wrap>
+    <v-layout row wrap class="mt-2">
       <v-flex xs-12>
-        <v-carousel class="mt-2">
+        <v-carousel style="cursor: pointer">
           <v-carousel-item
             v-for="training in trainings"
             :src="training.imageURL"
-            :key="training.id">
+            :key="training.id"
+            @click.native="onLoadTraining(training.id)">
             <div class="title text-xs-center text-sm-right">{{training.title}}</div>
           </v-carousel-item>
         </v-carousel>
@@ -39,6 +40,11 @@
             title: 'Fitness'
           }
         ]
+      }
+    },
+    methods: {
+      onLoadTraining (id) {
+        this.$router.push('/schedules/' + id)
       }
     }
   }

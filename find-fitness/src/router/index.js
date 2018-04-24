@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Favorites from '@/components/Gym/Favorites'
 import CreateSchedule from '@/components/Schedule/CreateSchedule'
+import Workout from '@/components/Schedule/Workout'
 import Gyms from '@/components/Gym/Gyms'
 import Schedules from '@/components/Schedule/Schedules'
 import Profile from '@/components/User/Profile'
@@ -37,6 +38,11 @@ export default new Router({
       path: '/schedule/new',
       name: 'CreateSchedule',
       component: CreateSchedule
+    },
+    {
+      path: '/schedules/:id',
+      name: 'Workout',
+      component: Workout
     },
     {
       path: '/profile',
