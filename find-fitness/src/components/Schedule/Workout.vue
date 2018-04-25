@@ -7,7 +7,7 @@
             <h2 class="primary--text">{{training.title}}</h2>
           </v-card-title>
           <v-card-media
-            :src="training.imageURL"
+            :src="training.imageUrl"
             height="300px"
           >
           </v-card-media>
@@ -36,7 +36,7 @@
       'id'
     ],
     computed: {
-      training() {
+      training () {
         return this.$store.getters.loadedTraining(this.id)
       }
     }

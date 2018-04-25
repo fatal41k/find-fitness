@@ -7,7 +7,7 @@
             <v-layout row>
               <v-flex xs5 sm4 md3>
                 <v-card-media
-                  :src="training.imageURL"
+                  :src="training.imageUrl"
                   height="125px"
                 >
                 </v-card-media>
@@ -19,12 +19,12 @@
                     <div>{{training.date}}</div>
                   </div>
                 </v-card-title>
-                <v-card-action>
+                <v-card-actions>
                   <v-btn flat :to="/schedules/ + training.id">
                     <v-icon>arrow_forward</v-icon>
                     View details
                   </v-btn>
-                </v-card-action>
+                </v-card-actions>
               </v-flex>
             </v-layout>
           </v-container>

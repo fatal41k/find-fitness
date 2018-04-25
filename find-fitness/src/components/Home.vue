@@ -32,7 +32,7 @@
       }
     },
     methods: {
-      onLoadTraining(id) {
+      onLoadTraining (id) {
         this.$router.push('/schedules/' + id)
       }
     }
