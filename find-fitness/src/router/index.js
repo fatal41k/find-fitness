@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Favorites from '@/components/Gym/Favorites'
-import CreateSchedule from '@/components/Schedule/CreateSchedule'
+import CreateWorkout from '@/components/Schedule/CreateWorkout'
 import Workout from '@/components/Schedule/Workout'
 import Gyms from '@/components/Gym/Gyms'
 import Schedules from '@/components/Schedule/Schedules'
@@ -36,8 +36,8 @@ export default new Router({
     },
     {
       path: '/schedule/new',
-      name: 'CreateSchedule',
-      component: CreateSchedule
+      name: 'CreateWorkout',
+      component: CreateWorkout
     },
     {
       path: '/schedules/:id',

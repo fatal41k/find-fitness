@@ -58,7 +58,7 @@ export default {
       sideNav: false,
       menuItems: [
         {icon: 'schedule', title: 'View schedule', link: '/schedules'},
-        {icon: 'create', title: 'Create schedule', link: '/schedule/new'},
+        {icon: 'create', title: 'Create workout', link: '/schedule/new'},
         {icon: 'location_on', title: 'To Find', link: '/gyms'},
         {icon: 'favorite', title: 'Favorites', link: '/gym/favorite'},
         {icon: 'face', title: 'Sign up', link: '/signup'},

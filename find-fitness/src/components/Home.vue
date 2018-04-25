@@ -5,7 +5,7 @@
         <v-carousel style="cursor: pointer">
           <v-carousel-item
             v-for="training in trainings"
-            :src="training.imageURL"
+            :src="training.imageUrl"
             :key="training.id"
             @click.native="onLoadTraining(training.id)">
             <div class="title text-xs-center text-sm-right">{{training.title}}</div>
