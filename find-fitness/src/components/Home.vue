@@ -26,24 +26,13 @@
 
 <script>
   export default {
-    data () {
-      return {
-        trainings: [
-          {
-            imageURL: 'https://peterwelchsgym.com/wp-content/uploads/2015/11/womanboxing2.jpg',
-            id: 'fafsafafsafsa321312',
-            title: 'Boxing'
-          },
-          {
-            imageURL: 'https://img.grouponcdn.com/deal/nfxcCRuxaxCn14evCjy9/kT-960x576/v1/c700x420.jpg',
-            id: 'fafsafafsafsa324222',
-            title: 'Fitness'
-          }
-        ]
+    computed: {
+      trainings () {
+        return this.$store.getters.featuredTrainings
       }
     },
     methods: {
-      onLoadTraining (id) {
+      onLoadTraining(id) {
         this.$router.push('/schedules/' + id)
       }
     }
@@ -54,7 +43,7 @@
   .title {
     position: absolute;
     bottom: 50px;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     font-size: 2em;
     padding: 20px;
     color: white;

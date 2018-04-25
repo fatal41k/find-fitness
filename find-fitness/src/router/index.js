@@ -42,6 +42,7 @@ export default new Router({
     {
       path: '/schedules/:id',
       name: 'Workout',
+      props: true,
       component: Workout
     },
     {
