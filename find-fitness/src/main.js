@@ -7,6 +7,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
 import { store } from './store'
+import DateFilter from './filters/date'
 
 Vue.use(Vuetify, {
   theme: {
@@ -16,8 +17,9 @@ Vue.use(Vuetify, {
     error: colors.red.accent3
   }
 })
-
 Vue.config.productionTip = false
+
+Vue.filter('date', DateFilter)
 
 /* eslint-disable no-new */
 new Vue({

@@ -16,7 +16,7 @@
                 <v-card-title primary-title>
                   <div>
                     <h2 class="white--text mb-0">{{training.title}}</h2>
-                    <div>{{training.date}}</div>
+                    <div>{{training.date| date}}</div>
                   </div>
                 </v-card-title>
                 <v-card-actions>

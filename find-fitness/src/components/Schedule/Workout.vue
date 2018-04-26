@@ -13,7 +13,7 @@
           </v-card-media>
           <v-card-text>
             <div>
-              <h4 class="info--text">{{training.date}} {{training.description}}, {{training.location}}</h4>
+              <h4 class="info--text">{{training.date | date}} {{training.description}}, {{training.location}}</h4>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
