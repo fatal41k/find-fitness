@@ -10,13 +10,17 @@ export const store = new Vuex.Store({
         imageUrl: 'https://peterwelchsgym.com/wp-content/uploads/2015/11/womanboxing2.jpg',
         id: 'fafsafafsafsa321312',
         title: 'Boxing',
-        date: '2018-04-03'
+        date: new Date(),
+        location: 'Kijow',
+        description: 'Awesome event'
       },
       {
         imageUrl: 'https://img.grouponcdn.com/deal/nfxcCRuxaxCn14evCjy9/kT-960x576/v1/c700x420.jpg',
         id: 'fafsafafsafsa324222',
         title: 'Fitness',
-        date: '2018-04-13'
+        date: new Date(),
+        location: 'Kijow',
+        description: 'Awesome event'
       }
     ],
     user: {

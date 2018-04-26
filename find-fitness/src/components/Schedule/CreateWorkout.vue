@@ -60,7 +60,7 @@
             </v-flex>
           </v-layout>
           <v-layout row class="mb-2">
-            <v-flex xs12 sm6 offset-sm3>
+            <v-flex xs6 sm3 offset-sm3>
               <v-date-picker
                 class="mt-3"
                 v-model="date"
