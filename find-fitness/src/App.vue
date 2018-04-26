@@ -55,15 +55,27 @@
 export default {
   data () {
     return {
-      sideNav: false,
-      menuItems: [
-        {icon: 'schedule', title: 'View schedule', link: '/schedules'},
-        {icon: 'create', title: 'Create workout', link: '/schedule/new'},
-        {icon: 'location_on', title: 'To Find', link: '/gyms'},
-        {icon: 'favorite', title: 'Favorites', link: '/gym/favorite'},
+      sideNav: false
+    }
+  },
+  computed: {
+    menuItems () {
+      let menuItems = [
         {icon: 'face', title: 'Sign up', link: '/signup'},
         {icon: 'lock_open', title: 'Sign in', link: '/signin'}
       ]
+      if (this.userIsAuth) {
+        menuItems = [
+          {icon: 'schedule', title: 'View schedule', link: '/schedules'},
+          {icon: 'create', title: 'Create workout', link: '/schedule/new'},
+          {icon: 'location_on', title: 'To Find', link: '/gyms'},
+          {icon: 'favorite', title: 'Favorites', link: '/gym/favorite'}
+        ]
+      }
+      return menuItems
+    },
+    userIsAuth () {
+      return this.$store.getters.user !== null && this.$store.getters.user !== undefined
     }
   },
   name: 'App'

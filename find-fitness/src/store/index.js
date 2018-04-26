@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import * as firebase from 'firebase'
 
 Vue.use(Vuex)
 
@@ -23,14 +24,14 @@ export const store = new Vuex.Store({
         description: 'Awesome event'
       }
     ],
-    user: {
-      id: 'dfdsfdsf',
-      registeredTrainings: ['fafsafafsafsa321312']
-    }
+    user: null
   },
   mutations: {
     createTraining (state, payload) {
       state.loadedTrainings.push(payload)
+    },
+    setUser (state, payload) {
+      state.user = payload
     }
   },
   actions: {
@@ -45,6 +46,37 @@ export const store = new Vuex.Store({
       }
       // Reachout a firebase and store it
       commit('createTraining', training)
+    },
+    userSignup ({commit}, payload) {
+      firebase.auth()
+        .createUserWithEmailAndPassword(payload.email, payload.password)
+        .then(user => {
+          const newUser = {
+            id: user.uid,
+            registeredWorkouts: []
+          }
+          commit('setUser', newUser)
+        }).catch(
+        error => {
+          console.log(error)
+        })
+    },
+    userSignin ({commit}, payload) {
+      firebase.auth()
+        .signInWithEmailAndPassword(payload.email, payload.password)
+        .then(
+          user => {
+            const newUser = {
+              id: user.uid,
+              registeredWorkouts: []
+            }
+            commit('setUser', newUser)
+          }
+        ).catch(
+          error => {
+            console.log(error)
+          }
+      )
     }
   },
   getters: {
@@ -62,6 +94,9 @@ export const store = new Vuex.Store({
           return training.id === trainingId
         })
       }
+    },
+    user (state) {
+      return state.user
     }
   }
 })
