@@ -9,6 +9,7 @@ import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
 import { store } from './store'
 import DateFilter from './filters/date'
+import AlertComponent from './components/Shared/Alert.vue'
 
 Vue.use(Vuetify, {
   theme: {
@@ -18,6 +19,7 @@ Vue.use(Vuetify, {
     error: colors.red.accent3
   }
 })
+Vue.component('app-alert', AlertComponent)
 Vue.config.productionTip = false
 
 Vue.filter('date', DateFilter)
