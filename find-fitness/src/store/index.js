@@ -66,8 +66,8 @@ export const store = new Vuex.Store({
               creatorId: obj[key].creatorId
             })
           }
-          commit('setLoading', false)
           commit('setLoadedTrainings', trainings)
+          commit('setLoading', false)
         })
         .catch(
           (error) => {
@@ -80,23 +80,37 @@ export const store = new Vuex.Store({
       const training = {
         title: payload.title,
         location: payload.location,
-        imageUrl: payload.imageUrl,
         description: payload.description,
         date: payload.date.toISOString(),
         creatorId: getters.user.id
       }
+      let imageUrl
+      let key
       firebase.database().ref('trainings').push(training)
         .then((data) => {
-          const key = data.key
-          console.log(data)
+          key = data.key
+          return key
+        })
+        .then(key => {
+          const filename = payload.image.name
+          const ext = filename.slice(filename.lastIndexOf('.'))
+          console.log(filename, 'ext: ', ext)
+          return firebase.storage().ref('trainings/' + key + '.' + ext).put(payload.image)
+        })
+        .then(fileData => {
+          imageUrl = fileData.metadata.downloadURLs[0]
+          return firebase.database().ref('trainings').child(key).update({imageUrl: imageUrl})
+        })
+        .then(() => {
           commit('createTraining', {
             ...training,
+            imageUrl: imageUrl,
             id: key
           })
-        }).catch((error) => {
+        })
+        .catch((error) => {
           console.log(error)
         })
-      // Reachout a firebase and store it
     },
     userSignup ({commit}, payload) {
       commit('setLoading', true)

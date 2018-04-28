@@ -32,14 +32,14 @@
           </v-layout>
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-              <v-text-field
-                name="imageUrl"
-                label="ImageUrl"
-                id="image-url"
-                required
-                v-model="imageUrl"
-              ></v-text-field>
               <img :src="imageUrl" height="300px" alt="">
+              <v-btn raised @click="onPickFile">Upload image</v-btn>
+              <input
+                type="file"
+                style="display: none"
+                ref="fileInput"
+                accept="image/*"
+                @change="onFilePicked">
             </v-flex>
           </v-layout>
           <v-layout row>
@@ -101,7 +101,8 @@
         imageUrl: '',
         description: '',
         date: null,
-        time: new Date()
+        time: new Date(),
+        image: null
       }
     },
     computed: {
@@ -128,15 +129,34 @@
         if (!this.formIsValid) {
           return
         }
+        if (!this.image) {
+          return
+        }
         const trainingData = {
           title: this.title,
           location: this.location,
-          imageUrl: this.imageUrl,
+          image: this.image,
           description: this.description,
           date: this.submittableDateTime
         }
         this.$store.dispatch('createTraining', trainingData)
         this.$router.push('/schedules')
+      },
+      onPickFile () {
+        this.$refs.fileInput.click()
+      },
+      onFilePicked (event) {
+        const files = event.target.files
+        let filename = files[0].name
+        if (filename.lastIndexOf('.') <= 0) {
+          return alert('Please load a correct file')
+        }
+        const fileReader = new FileReader()
+        fileReader.addEventListener('load', () => {
+          this.imageUrl = fileReader.result
+        })
+        fileReader.readAsDataURL(files[0])
+        this.image = files[0]
       }
     }
   }

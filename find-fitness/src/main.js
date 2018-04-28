@@ -37,7 +37,7 @@ new Vue({
       authDomain: 'bai-find-fitness.firebaseapp.com',
       databaseURL: 'https://bai-find-fitness.firebaseio.com',
       projectId: 'bai-find-fitness',
-      storageBucket: 'bai-find-fitness.appspot.com'
+      storageBucket: 'gs://bai-find-fitness.appspot.com'
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
