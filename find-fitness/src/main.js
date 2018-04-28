@@ -39,5 +39,11 @@ new Vue({
       projectId: 'bai-find-fitness',
       storageBucket: 'bai-find-fitness.appspot.com'
     })
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.$store.dispatch('autoSignin', user)
+      }
+    })
+    this.$store.dispatch('loadTrainings')
   }
 })

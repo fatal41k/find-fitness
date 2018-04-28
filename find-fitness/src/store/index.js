@@ -41,22 +41,62 @@ export const store = new Vuex.Store({
     setError (state, payload) {
       state.error = payload
     },
+    setLoadedTrainings (state, payload) {
+      state.loadedTrainings = payload
+    },
     clearError (state) {
       state.error = null
     }
   },
   actions: {
-    createTraining ({commit}, payload) {
+    loadTrainings ({commit}) {
+      commit('setLoading', true)
+      firebase.database().ref('trainings').once('value')
+        .then((data) => {
+          const trainings = []
+          const obj = data.val()
+          for (let key in obj) {
+            trainings.push({
+              id: key,
+              title: obj[key].title,
+              location: obj[key].location,
+              imageUrl: obj[key].imageUrl,
+              description: obj[key].description,
+              date: obj[key].date,
+              creatorId: obj[key].creatorId
+            })
+          }
+          commit('setLoading', false)
+          commit('setLoadedTrainings', trainings)
+        })
+        .catch(
+          (error) => {
+            commit('setLoading', true)
+            console.log(error)
+          }
+        )
+    },
+    createTraining ({commit, getters}, payload) {
       const training = {
         title: payload.title,
         location: payload.location,
         imageUrl: payload.imageUrl,
         description: payload.description,
-        date: payload.date,
-        id: '434324324324'
+        date: payload.date.toISOString(),
+        creatorId: getters.user.id
       }
+      firebase.database().ref('trainings').push(training)
+        .then((data) => {
+          const key = data.key
+          console.log(data)
+          commit('createTraining', {
+            ...training,
+            id: key
+          })
+        }).catch((error) => {
+          console.log(error)
+        })
       // Reachout a firebase and store it
-      commit('createTraining', training)
     },
     userSignup ({commit}, payload) {
       commit('setLoading', true)
@@ -96,6 +136,13 @@ export const store = new Vuex.Store({
             commit('setError', error)
           }
       )
+    },
+    autoSignin ({commit}, payload) {
+      commit('setUser', {id: payload.uid, registeredWorkouts: []})
+    },
+    logout ({commit}) {
+      firebase.auth().signOut()
+      commit('setUser', null)
     },
     clearError ({commit}) {
       commit('clearError')
