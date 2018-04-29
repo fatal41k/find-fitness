@@ -10,6 +10,7 @@ import colors from 'vuetify/es5/util/colors'
 import { store } from './store'
 import DateFilter from './filters/date'
 import AlertComponent from './components/Shared/Alert.vue'
+import EditWorkoutDetails from './components/Schedule/Edit/EditWorkoutDetailsDialog.vue'
 
 Vue.use(Vuetify, {
   theme: {
@@ -20,6 +21,7 @@ Vue.use(Vuetify, {
   }
 })
 Vue.component('app-alert', AlertComponent)
+Vue.component('app-edit-workout-dialog', EditWorkoutDetails)
 Vue.config.productionTip = false
 
 Vue.filter('date', DateFilter)

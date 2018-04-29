@@ -32,6 +32,20 @@ export const store = new Vuex.Store({
     createTraining (state, payload) {
       state.loadedTrainings.push(payload)
     },
+    updateTraining (state, payload) {
+      const training = state.loadedTrainings.find((training) => {
+        return training.id === payload.id
+      })
+      if (payload.title) {
+        training.title = payload.title
+      }
+      if (payload.description) {
+        training.description = payload.description
+      }
+      if (payload.date) {
+        training.date = payload.date
+      }
+    },
     setUser (state, payload) {
       state.user = payload
     },
@@ -110,6 +124,28 @@ export const store = new Vuex.Store({
         })
         .catch((error) => {
           console.log(error)
+        })
+    },
+    updateTrainingData ({commit}, payload) {
+      commit('setLoading', true)
+      const updateObj = {}
+      if (payload.title) {
+        updateObj.title = payload.title
+      }
+      if (payload.description) {
+        updateObj.description = payload.description
+      }
+      if (payload.date) {
+        updateObj.date = payload.date
+      }
+      firebase.database().ref('trainings').child(payload.id).update(updateObj)
+        .then(() => {
+          commit('setLoading', false)
+          commit('updateTraining', payload)
+        })
+        .catch(error => {
+          console.log(error)
+          commit('setLoading', false)
         })
     },
     userSignup ({commit}, payload) {

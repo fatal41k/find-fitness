@@ -1,10 +1,24 @@
 <template>
   <v-container>
-    <v-layout row wrap>
+    <v-layout row wrap v-if="loading">
+      <v-flex xs12 class="text-xs-center">
+        <v-progress-circular
+          indeterminate color="primary"
+          :width="7"
+          :size="70"
+          v-if="loading"
+        ></v-progress-circular>
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap v-else>
       <v-flex xs12>
         <v-card>
           <v-card-title>
             <h2 class="primary--text">{{training.title}}</h2>
+            <template v-if="userIsCreator">
+              <v-spacer></v-spacer>
+              <app-edit-workout-dialog :training="training"></app-edit-workout-dialog>
+            </template>
           </v-card-title>
           <v-card-media
             :src="training.imageUrl"
@@ -38,6 +52,18 @@
     computed: {
       training () {
         return this.$store.getters.loadedTraining(this.id)
+      },
+      userIsAuth () {
+        return this.$store.getters.user !== null && this.$store.getters.user !== undefined
+      },
+      userIsCreator () {
+        if (!this.userIsAuth) {
+          return false
+        }
+        return this.$store.getters.user.id === this.training.creatorId
+      },
+      loading () {
+        return this.$store.getters.loading
       }
     }
   }
