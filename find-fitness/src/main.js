@@ -11,6 +11,8 @@ import { store } from './store'
 import DateFilter from './filters/date'
 import AlertComponent from './components/Shared/Alert.vue'
 import EditWorkoutDetails from './components/Schedule/Edit/EditWorkoutDetailsDialog.vue'
+import EditWorkoutDate from './components/Schedule/Edit/EditWorkoutDateDialog.vue'
+import EditWorkoutTime from './components/Schedule/Edit/EditWorkoutTimeDialog.vue'
 
 Vue.use(Vuetify, {
   theme: {
@@ -22,6 +24,8 @@ Vue.use(Vuetify, {
 })
 Vue.component('app-alert', AlertComponent)
 Vue.component('app-edit-workout-dialog', EditWorkoutDetails)
+Vue.component('app-edit-workout-date', EditWorkoutDate)
+Vue.component('app-edit-workout-time', EditWorkoutTime)
 Vue.config.productionTip = false
 
 Vue.filter('date', DateFilter)

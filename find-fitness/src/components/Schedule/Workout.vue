@@ -17,7 +17,9 @@
             <h2 class="primary--text">{{training.title}}</h2>
             <template v-if="userIsCreator">
               <v-spacer></v-spacer>
-              <app-edit-workout-dialog :training="training"></app-edit-workout-dialog>
+              <app-edit-workout-dialog
+                :training="training"
+                v-if="userIsCreator"></app-edit-workout-dialog>
             </template>
           </v-card-title>
           <v-card-media
@@ -28,6 +30,12 @@
           <v-card-text>
             <div>
               <h4 class="info--text">{{training.date | date}} {{training.description}}, {{training.location}}</h4>
+              <template v-if="userIsCreator">
+                <div>
+                  <app-edit-workout-date :training="training"></app-edit-workout-date>
+                  <app-edit-workout-time :training="training"></app-edit-workout-time>
+                </div>
+              </template>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
