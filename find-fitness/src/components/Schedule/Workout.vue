@@ -44,7 +44,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn class="primary">Register</v-btn>
+            <app-training-register-dialog :trainingId="training.id" v-if="userIsAuth && !userIsCreator"></app-training-register-dialog>
           </v-card-actions>
         </v-card>
       </v-flex>

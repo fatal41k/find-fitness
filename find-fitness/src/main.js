@@ -13,6 +13,7 @@ import AlertComponent from './components/Shared/Alert.vue'
 import EditWorkoutDetails from './components/Schedule/Edit/EditWorkoutDetailsDialog.vue'
 import EditWorkoutDate from './components/Schedule/Edit/EditWorkoutDateDialog.vue'
 import EditWorkoutTime from './components/Schedule/Edit/EditWorkoutTimeDialog.vue'
+import RegisterToTraining from './components/Schedule/Registration/RegisterDialog.vue'
 
 Vue.use(Vuetify, {
   theme: {
@@ -26,6 +27,7 @@ Vue.component('app-alert', AlertComponent)
 Vue.component('app-edit-workout-dialog', EditWorkoutDetails)
 Vue.component('app-edit-workout-date', EditWorkoutDate)
 Vue.component('app-edit-workout-time', EditWorkoutTime)
+Vue.component('app-training-register-dialog', RegisterToTraining)
 Vue.config.productionTip = false
 
 Vue.filter('date', DateFilter)
@@ -48,6 +50,7 @@ new Vue({
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         this.$store.dispatch('autoSignin', user)
+        this.$store.dispatch('fetchUserData')
       }
     })
     this.$store.dispatch('loadTrainings')

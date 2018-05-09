@@ -34,7 +34,7 @@
           </v-flex>
         </v-layout>
         <v-divider></v-divider>
-        <v-layout row wrao>
+        <v-layout row wrap>
           <v-flex>
             <v-card-actions>
               <v-btn flat class="blue--text darken-1" @click.native="acceptChanges">Accept</v-btn>

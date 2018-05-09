@@ -13,7 +13,7 @@
           </v-flex>
         </v-layout>
         <v-divider></v-divider>
-        <v-layout row wrao>
+        <v-layout row wrap>
           <v-flex x12>
             <v-date-picker v-model="editableDate" style="width: 100%" actions>
                 <v-flex>
