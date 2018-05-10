@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Favorites from '@/components/Gym/Favorites'
 import CreateWorkout from '@/components/Schedule/CreateWorkout'
 import Workout from '@/components/Schedule/Workout'
+import Participate from '@/components/Schedule/Participate'
 import Gyms from '@/components/Gym/Gyms'
 import Schedules from '@/components/Schedule/Schedules'
 import Profile from '@/components/User/Profile'
@@ -46,6 +47,12 @@ export default new Router({
       name: 'Workout',
       props: true,
       component: Workout
+    },
+    {
+      path: '/schedule/participate',
+      name: 'Participate',
+      component: Participate,
+      beforeEnter: AuthGuard
     },
     {
       path: '/profile',

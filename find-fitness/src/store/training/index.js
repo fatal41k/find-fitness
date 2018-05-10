@@ -10,14 +10,6 @@ export default {
         date: new Date(),
         location: 'Kijow',
         description: 'Awesome event'
-      },
-      {
-        imageUrl: 'https://img.grouponcdn.com/deal/nfxcCRuxaxCn14evCjy9/kT-960x576/v1/c700x420.jpg',
-        id: 'fafsafafsafsa324222',
-        title: 'Fitness',
-        date: new Date(),
-        location: 'Kijow',
-        description: 'Awesome event'
       }
     ]
   },

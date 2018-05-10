@@ -78,10 +78,10 @@ export default {
       ]
       if (this.userIsAuth) {
         menuItems = [
-          {icon: 'schedule', title: 'View schedule', link: '/schedules'},
           {icon: 'create', title: 'Create workout', link: '/schedule/new'},
-          {icon: 'location_on', title: 'To Find', link: '/gyms'},
-          {icon: 'favorite', title: 'Favorites', link: '/gym/favorite'}
+          {icon: 'schedule', title: 'View schedule', link: '/schedules'},
+          {icon: 'how_to_reg', title: 'Participate', link: '/schedule/participate'},
+          {icon: 'location_on', title: 'To Find', link: '/gyms'}
         ]
       }
       return menuItems
