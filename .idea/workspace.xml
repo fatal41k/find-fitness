@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1c977cd-1b65-4d1f-8821-32fe3ac125d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/find-fitness/src/App.vue" afterPath="$PROJECT_DIR$/find-fitness/src/App.vue" />
-      <change beforePath="$PROJECT_DIR$/find-fitness/src/router/index.js" afterPath="$PROJECT_DIR$/find-fitness/src/router/index.js" />
+      <change beforePath="$PROJECT_DIR$/find-fitness/src/components/Schedule/Workout.vue" afterPath="$PROJECT_DIR$/find-fitness/src/components/Schedule/Workout.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,44 +14,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/find-fitness/src/App.vue">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/store/training/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="89" column="46" lean-forward="true" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+            <state relative-caret-position="1200">
+              <caret line="101" column="14" lean-forward="false" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
               <folding>
-                <element signature="n#style#0;n#router-link#0;n#v-toolbar-title#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#371#948#0" expanded="false" />
+                <element signature="e#3585#4023#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyWorkouts.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/MyWorkouts.vue">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/store/user/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="51" column="45" lean-forward="true" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="135">
+              <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+              <folding>
+                <element signature="e#99#741#0" expanded="false" />
+                <element signature="e#813#1237#0" expanded="false" />
+                <element signature="e#1299#1788#0" expanded="false" />
+                <element signature="e#1825#2543#0" expanded="false" />
+                <element signature="e#2580#3366#0" expanded="false" />
+                <element signature="e#3429#3533#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/find-fitness/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="49" column="50" lean-forward="true" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+            <state relative-caret-position="535">
+              <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth-guard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/find-fitness/src/router/auth-guard.js">
+      <file leaf-file-name="Schedules.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Schedules.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+              <folding>
+                <element signature="n#v-list#0;n#v-navigation-drawer#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#v-toolbar-side-icon#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#v-toolbar-title#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#v-btn#0;n#v-toolbar-items#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,11 +82,49 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/find-fitness/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-346">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Home.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-277">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterDialog.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Registration/RegisterDialog.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditWorkoutDateDialog.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Edit/EditWorkoutDateDialog.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/find-fitness/src/store/shared/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +169,6 @@
         <option value="$PROJECT_DIR$/find-fitness/src/components/Schedule/Edit/EditWorkoutDetailsDialog.vue" />
         <option value="$PROJECT_DIR$/find-fitness/src/main.js" />
         <option value="$PROJECT_DIR$/find-fitness/src/components/Home.vue" />
-        <option value="$PROJECT_DIR$/find-fitness/src/components/Schedule/Workout.vue" />
         <option value="$PROJECT_DIR$/find-fitness/src/store/trainings/index.js" />
         <option value="$PROJECT_DIR$/find-fitness/src/store/registration/index.js" />
         <option value="$PROJECT_DIR$/find-fitness/src/store/shared/index.js" />
@@ -121,6 +180,7 @@
         <option value="$PROJECT_DIR$/find-fitness/src/store/user/index.js" />
         <option value="$PROJECT_DIR$/find-fitness/src/router/index.js" />
         <option value="$PROJECT_DIR$/find-fitness/src/App.vue" />
+        <option value="$PROJECT_DIR$/find-fitness/src/components/Schedule/Workout.vue" />
       </list>
     </option>
   </component>
@@ -185,38 +245,7 @@
               <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
               <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="find-fitness" type="b2602c69:ProjectViewProjectNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Schedule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="find-fitness" type="b2602c69:ProjectViewProjectNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="find-fitness" type="b2602c69:ProjectViewProjectNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="find-fitness" type="b2602c69:ProjectViewProjectNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="find-fitness" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +318,7 @@
       <workItem from="1525009913814" duration="4380000" />
       <workItem from="1525273700362" duration="1321000" />
       <workItem from="1525793548822" duration="27714000" />
-      <workItem from="1525942110507" duration="12787000" />
+      <workItem from="1525942110507" duration="16184000" />
     </task>
     <task id="LOCAL-00001" summary="Added application main skeleton view, manage colors">
       <created>1524529209617</created>
@@ -424,11 +453,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525959725295</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added: menu items shows depending on role type">
+      <created>1525962042871</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1525962042871</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117347000" />
+    <option name="totallyTimeSpent" value="120744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,11 +561,12 @@
     <MESSAGE value="Added: -permission to change workout details; -opportunity to register and unregister from workouts" />
     <MESSAGE value="Refactored - state Store" />
     <MESSAGE value="Added: users roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: users roles" />
+    <MESSAGE value="Added: menu items shows depending on role type" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added: menu items shows depending on role type" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -708,85 +745,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="0" column="18516" lean-forward="false" selection-start-line="0" selection-start-column="18516" selection-end-line="0" selection-end-column="18516" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/find-fitness/src/store/registration/index.js" />
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/shared/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/filters/date.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Edit/EditWorkoutTimeDialog.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Edit/EditWorkoutDateDialog.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="79" column="39" lean-forward="true" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Edit/EditWorkoutDetailsDialog.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Participate.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="47" column="10" lean-forward="false" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Registration/RegisterDialog.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="55" column="71" lean-forward="false" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/training/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/user/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="145" column="23" lean-forward="true" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -799,58 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/User/Signup.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="114" column="35" lean-forward="false" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Shared/Alert.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Workout.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Schedules.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/CreateWorkout.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/find-fitness/src/router/auth-guard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/MyWorkouts.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="51" column="45" lean-forward="true" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -863,41 +782,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Home.vue">
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Participate.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="45" column="38" lean-forward="false" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/MyWorkouts.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/CreateWorkout.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/User/Signup.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/filters/date.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Workout.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Edit/EditWorkoutDetailsDialog.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="39" column="82" lean-forward="false" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Shared/Alert.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Registration/RegisterDialog.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Edit/EditWorkoutDateDialog.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/shared/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/training/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="101" column="14" lean-forward="false" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#v-carousel#0;n#v-flex#0;n#v-layout#1;n#v-container#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#371#948#0" expanded="false" />
+            <element signature="e#3585#4023#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/router/index.js">
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/store/user/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-346">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#99#741#0" expanded="false" />
+            <element signature="e#813#1237#0" expanded="false" />
+            <element signature="e#1299#1788#0" expanded="false" />
+            <element signature="e#1825#2543#0" expanded="false" />
+            <element signature="e#2580#3366#0" expanded="false" />
+            <element signature="e#3429#3533#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/find-fitness/src/main.js">
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Schedule/Schedules.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="49" column="50" lean-forward="true" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+        <state relative-caret-position="600">
+          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-277">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/find-fitness/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="89" column="46" lean-forward="true" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+        <state relative-caret-position="225">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#router-link#0;n#v-toolbar-title#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#v-list#0;n#v-navigation-drawer#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#v-toolbar-side-icon#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#v-toolbar-title#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#v-btn#0;n#v-toolbar-items#0;n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find-fitness/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

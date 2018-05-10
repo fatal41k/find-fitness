@@ -44,7 +44,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <app-training-register-dialog :trainingId="training.id" v-if="userIsAuth && !userIsCreator"></app-training-register-dialog>
+            <app-training-register-dialog :trainingId="training.id" v-if="userIsAuth && !userIsCreator && !userIsTrainer"></app-training-register-dialog>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -69,6 +69,12 @@
           return false
         }
         return this.$store.getters.user.id === this.training.creatorId
+      },
+      userIsTrainer () {
+        if (!this.userIsAuth) {
+          return false
+        }
+        return this.$store.getters.user.role === 'trainer'
       },
       loading () {
         return this.$store.getters.loading
