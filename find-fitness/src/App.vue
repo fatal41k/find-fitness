@@ -77,12 +77,21 @@ export default {
         {icon: 'lock_open', title: 'Sign in', link: '/signin'}
       ]
       if (this.userIsAuth) {
-        menuItems = [
-          {icon: 'create', title: 'Create workout', link: '/schedule/new'},
-          {icon: 'schedule', title: 'View schedule', link: '/schedules'},
-          {icon: 'how_to_reg', title: 'Participate', link: '/schedule/participate'},
-          {icon: 'location_on', title: 'To Find', link: '/gyms'}
-        ]
+        if (this.$store.getters.user.role === 'user') {
+          menuItems = [
+            {icon: 'schedule', title: 'All workouts', link: '/schedules'},
+            {icon: 'how_to_reg', title: 'Participate', link: '/schedule/participate'},
+            {icon: 'location_on', title: 'To Find', link: '/gyms'},
+            {icon: 'account_circle', title: 'Profile', link: '/profile'}
+          ]
+        } else {
+          menuItems = [
+            {icon: 'create', title: 'Create workout', link: '/schedule/new'},
+            {icon: 'schedule', title: 'All workouts', link: '/schedules'},
+            {icon: 'directions_run', title: 'My workouts', link: '/schedule/myworkouts'},
+            {icon: 'account_circle', title: 'Profile', link: '/profile'}
+          ]
+        }
       }
       return menuItems
     },
